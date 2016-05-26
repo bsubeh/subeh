@@ -16,7 +16,8 @@
     <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/vertical.min.css" rel="stylesheet">
     <link href="css/style.changer.css" rel="stylesheet">
-    <link id="theme" href="css/theme/theme-red-2.css" rel="stylesheet">
+    <link id="theme" href="css/theme/theme-blue.css" rel="stylesheet">
+    <link href="css/YTPlayer.css" rel="stylesheet">
   </head>
   <body class="appear-animate">
     <!-- Page Loader Start-->
@@ -38,7 +39,7 @@
             <!-- Item With Sub-->
             <li><a href="#" class="menu-has-sub">Pages<i class="fa fa-angle-down"></i></a>
               <!-- Sub-->
-              <ul class="menu-sub">
+              <ul class="menu-sub">           
                 <li><a href="#" class="menu-has-sub">Portfolio<i class="fa fa-angle-right right"></i></a>
                   <ul class="menu-sub">
                     <li><a href="#portfolio=ajax-portfolio-1.html">Single Page</a></li>
@@ -66,16 +67,19 @@
       </div>
     </nav>
     <!--Start section hero-->
-    <section id="hero" class="full-screen">
-      <!--Parallax image-->
-      <div id="particle-ground" data-background="img/full-width/bg-14.jpg" data-top="transform: translate3d(0px, 0px, 0px)" data-top-bottom="transform: translate3d(0px, -200px, 0px)" data-anchor-target="#hero" class="parallax parallax-hero full-screen bg-dark-50"></div>
+    <section id="hero" data-background="img/full-width/bg-19.jpg" class="full-screen bg-img">
+      <!--Background Youtube video-->
+      <div id="youvid" class="full-screen bg-dark-10 youtube-bg">
+        <div data-property="{videoURL:'https://youtu.be/X-b2Zrr8BEk',containment:'#youvid',autoPlay:true, showControls:true, showYTLogo: false, mute:false, startAt:0, opacity:1}" class="player"></div>
+      </div>
       <div class="hero-content">
         <div class="hero-content-inner">
-          <div data-wow-delay="0.5s" data-wow-duration="3s" class="hs-line-2 wow fadeInDown">Civil Engineering Student / Photographer / Graphic Designer</div>
-          <h1 data-wow-delay="0.5s" data-wow-duration="3s" class="hs-line-1 wow fadeIn">Bashar Subeh</h1>
+          <div data-wow-delay="0.5s" data-wow-duration="3s" class="hs-line-2 wow fadeInDown">Take your startup to the next level whith</div>
+          <h1 data-wow-delay="0.5s" data-wow-duration="3s" class="hs-line-1 wow fadeInUp">Exline Template</h1>
         </div>
       </div><a href="#page" data-start="display: block" data-100-start="display: none" class="btn-scroll-down scroll"></a>
     </section>
+    
     <div id="page" class="page">
       <!--Start section about-->
       <section id="about">
@@ -679,9 +683,9 @@
     <script src="js/jquery.ajaxchimp.min.js"></script>
     <script src="js/contact-form.js"></script>
     <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
-
+    
     <!--Delete after config-->
     <script src="js/style.changer.js"></script>
-    <script src="js/jquery.particleground.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
   </body>
 </html>
